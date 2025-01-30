@@ -11,12 +11,15 @@ import { routes } from './app.routes';
 
   ],
   imports: [
+    AppComponent,
     BrowserModule,
+
     RouterModule.forRoot(routes),
     HomeModule,
     ReservationModule,
-    AppComponent,
   ],
-  providers: []
+  providers: [
+
+  ]
 })
 export class AppModule { }

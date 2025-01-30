@@ -1,0 +1,22 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
+import { AppComponent } from './app.component';
+import { HomeModule } from './home/home.module';
+import { ReservationModule } from './reservation/reservation.module';
+import { routes } from './app.routes';
+
+@NgModule({
+  declarations: [
+
+  ],
+  imports: [
+    BrowserModule,
+    RouterModule.forRoot(routes),
+    HomeModule,
+    ReservationModule,
+    AppComponent,
+  ],
+  providers: []
+})
+export class AppModule { }
